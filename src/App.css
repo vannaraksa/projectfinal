@@ -1,0 +1,58 @@
+/* -------background color*/
+.bg-purple-900 {
+  background-color: #521e85 !important;
+}
+.bg-purple-800 {
+  background-color: #6324a5 !important;
+}
+.bg-purple-700 {
+  background-color: #7426ca !important;
+}
+.bg-purple-600 {
+  background-color: #8837e6 !important;
+}
+.bg-purple-500 {
+  background-color: #a15df4 !important;
+}
+.bg-purple-400 {
+  background-color: #b986fa !important;
+}
+.bg-purple-300 {
+  background-color: #d4b6fc !important;
+}
+
+@media (max-width: 992px) {
+  .h-respones {
+    height: 50% !important;
+  }
+}
+
+.img-1 {
+  background: url(https://api.ellecanada.com/app/uploads/2024/07/Drugstore-sensitive-skin.png);
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.415); */
+}
+.img-2 {
+  background: url(https://cdn.prod.website-files.com/616c78f7ba4e0bd9478c2ef0/6233af43121fe218e8c23978_Blog%20Main%20Images.png);
+  background-size: cover;
+}
+.img-3 {
+  background: url(https://daisily-website.transforms.svdcdn.com/production/images/Bubble-skincare-header2.png?w=1200&h=630&q=82&auto=format&fit=crop&dm=1719411498&s=77ee965df263de2f68a96a8875004172);
+  background-size: cover;
+}
+
+
+.text-1line {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+          line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}
+.text-3line {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
