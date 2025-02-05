@@ -8,7 +8,7 @@ import { FaCarSide } from "react-icons/fa";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { FaRegClock } from "react-icons/fa";
 import ProductContext from "../store/ProductProvider";
-import Cart from "../components/Cart";
+import Cart from "../components/Card";
 function Home() {
   const { product } = useContext(ProductContext);
   return (
@@ -101,7 +101,7 @@ function Home() {
         </div>
         {/* service */}
         <div className="d-flex justify-content-start my-3 overflow-auto">
-          <div className="col-12 col-md-6 col-lg-3  my-3 px-3">
+          <div className="col-12 col-md-6 col-lg-3 my-3 px-3">
             <div className="d-flex justify-content-center align-items-center shadow p-2 rounded-3">
               {/* <IoGift /> */}
               <GoGift style={{ fontSize: 74 }} />

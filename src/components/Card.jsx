@@ -4,7 +4,7 @@ import ProductContext from "../store/ProductProvider";
 import Skelaton from "./Skelaton";
 import { ToastContainer } from "react-toastify";
 
-function Cart() {
+function Card() {
   const {product,loading,addToCart} = useContext(ProductContext);
   return (
     <div className="container p-0">
@@ -53,4 +53,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default Card;

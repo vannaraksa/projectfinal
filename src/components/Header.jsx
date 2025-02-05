@@ -3,9 +3,10 @@ import { IoMdSearch } from "react-icons/io";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
 import ProductContext from "../store/ProductProvider";
+import Cart from "../pages/Cart";
 
 function Header() {
-  const { data } = useContext(ProductContext);
+  const { data,cart } = useContext(ProductContext);
   const [isLogin, setIslogin] = useState();
 
   // alert(data);
@@ -38,16 +39,16 @@ function Header() {
             </form>
           </div>
           <div className="d-none d-lg-flex align-items-center justify-content-end col-3 text-end">
-            <a
-              href=""
+            <NavLink
+              to="/cart"
               className="text-light text-decoration-none position-relative"
             >
               <TiShoppingCart className="fs-3" />
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                10
+                {cart.length}
                 <span class="visually-hidden">unread messages</span>
               </span>
-            </a>
+            </NavLink>
 
             {isLogin ? (
               <div className="ms-5">
